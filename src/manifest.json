@@ -1,0 +1,19 @@
+{
+  "manifest_version": 2,
+  "name": "yomy",
+  "version": "1.0",
+  "description": "",
+  "permissions": [
+    "contextMenus"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["<all_urls>"],
+      "js": ["content.js"]
+    }
+  ],
+  "background": {
+    "scripts": [ "background.js" ],
+    "persistent": false
+  }
+}
